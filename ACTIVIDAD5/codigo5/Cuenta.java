@@ -1,0 +1,24 @@
+package codigo5;
+
+public abstract class Cuenta {
+    private double saldo;
+
+    public Cuenta(double saldo) {
+        this.saldo = saldo;
+    }
+
+    public void depositar(double monto) {
+        saldo = saldo + monto;
+    }
+
+    public void retirar(double monto) {
+        saldo = saldo - monto;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public abstract void consultar();
+    
+}
